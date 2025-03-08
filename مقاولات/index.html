@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bogis</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+
+  
+    <header>
+
+     
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="services.html">خدماتنا</a></li>
+                <li><a href="projects.html">مشاريعنا</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        
+        
+    </header>
+
+    <!-- قسم الترحيب -->
+    <section class="hero-card">
+        <div class="hero-content">
+            <h1>مرحبًا بك في شركتنا</h1>
+
+            <button id="toggle-btn" class="toggle-btn">شاهد المزيد</button>
+        </div>
+    </section>
+
+    <div id="about-card" class="about-card">
+        <h1>من نحن</h1>
+        <p>
+            تأسست  شركة بوقس التجارية بهدف تقديم خدمات شاملة ومتكاملة في مجالات المقاولات العامة، التجارة العامة، وتوزيع المواد الأساسية. نحن نؤمن بأن الجودة والاحترافية هما أساس نجاح أي مشروع، لذا نسعى جاهدين لتقديم أفضل الحلول لعملائنا.
+        </p>          
+
+  
+    
+   
+    <script>
+        document.getElementById('toggle-btn').addEventListener('click', function() {
+            var aboutCard = document.getElementById('about-card');
+            var btn = document.getElementById('toggle-btn');
+
+            if (aboutCard.classList.contains('show')) {
+                aboutCard.classList.remove('show');
+                btn.textContent = "شاهد المزيد";
+            } else {
+                aboutCard.classList.add('show');
+                btn.textContent = "إخفاء التفاصيل";
+            }
+        });
+    </script>
+
+</body>
+</html>

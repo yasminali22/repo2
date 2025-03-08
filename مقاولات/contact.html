@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - شركة بوقس التجارية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #3f3c3c;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        .contact-form {
+            background: rgb(112, 111, 206);
+            padding: 30px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #004080;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .input-container i {
+            color: #004080;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .input-container input,
+        .input-container textarea {
+            flex: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 16px;
+            padding: 8px;
+        }
+
+        .input-container textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background: #004080;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button i {
+            font-size: 18px;
+        }
+
+        button:hover {
+            background: #002d5b;
+        }
+
+        .reset-btn {
+            background: #ccc;
+            color: #333;
+        }
+
+        .reset-btn:hover {
+            background: #999;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1da851;
+        }
+        nav {
+    background: linear-gradient(90deg, #004080, #002d5b);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #0056b3 0%, #008CBA 100%);
+    display: inline-block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, #003d7a 0%, #005f99 100%);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.footer-info p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #FFD700; /* لون ذهبي مميز */
+}
+
+.footer-info i {
+    font-size: 18px;
+    color: #ffcc00; /* لون ذهبي للأيقونات */
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #ffeb3b;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="projects.html">مشاريعنا</a></li>
+           
+        </ul>
+    </nav>
+    <div class="contact-container">
+        <section class="contact-form">
+            <h2>نموذج الاتصال</h2>
+            <form id="contactForm">
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" name="name" placeholder="الاسم" required>
+                </div>
+                
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+                </div>
+
+                <div class="input-container">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" required>
+                </div>
+
+                <div class="input-container">
+                    <i class="fas fa-comment-dots"></i>
+                    <textarea id="message" name="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit"><i class="fas fa-paper-plane"></i> إرسال</button>
+                    <button type="reset" class="reset-btn"><i class="fas fa-redo"></i> إعادة تعيين</button>
+                    <button type="button" class="whatsapp-btn" onclick="sendWhatsApp()"><i class="fab fa-whatsapp"></i> إرسال عبر واتساب</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p><i class="fas fa-map-marker-alt"></i> <span>العنوان: الجيزة، نيو جيزة، ويست ريدج، عمارة 29، شقة 11</span></p>
+            <p><i class="fas fa-phone"></i> الهاتف: <a href="tel:0122333366">0122333366</a></p>
+            <p>&copy; 2024 شركة بوقس التجارية - جميع الحقوق محفوظة</p>
+
+        </div>
+    </footer>
+    
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let phone = document.getElementById("phone").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            if (name === "" || email === "" || phone === "" || message === "") {
+                alert("⚠️ يرجى ملء جميع الحقول!");
+            } else {
+                alert("✅ تم التسجيل بنجاح!");
+                document.getElementById("contactForm").reset();
+            }
+        });
+
+        function sendWhatsApp() {
+            let name = document.getElementById('name').value.trim();
+            let phone = document.getElementById('phone').value.trim();
+            let message = document.getElementById('message').value.trim();
+
+            if (name === "" || phone === "" || message === "") {
+                alert("⚠️ يرجى ملء جميع الحقول قبل الإرسال عبر واتساب!");
+                return;
+            }
+
+            let whatsappNumber = '01124681819';
+            let url = `https://wa.me/${whatsappNumber}?text=الاسم:%20${name}%0Aالهاتف:%20${phone}%0Aالرسالة:%20${message}`;
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+</html>

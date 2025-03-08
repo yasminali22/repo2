@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاريعنا - شركة المقاولات</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+        body {
+            font-family: "Tajawal", sans-serif;
+            direction: rtl;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #262a2e;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 30px;
+            background: #55686d;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project h2 {
+            color: #2980b9;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        /* التأثير عند تمرير الماوس */
+        .project:hover {
+            transform: rotate(360deg);
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            background: #2980b9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .home-button:hover {
+            background: #1a5276;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>مشاريعنا</h1>
+
+        <div class="projects">
+            <div class="project">
+                <h2>مشروع المجمع السكني</h2>
+                <p>قمنا بتنفيذ مجمع سكني متكامل بأحدث التصاميم العصرية، مع مراعاة معايير الجودة والسلامة.</p>
+            </div>
+
+            <div class="project">
+                <h2>بناء مركز تجاري</h2>
+                <p>تصميم وتنفيذ مركز تجاري متطور يحتوي على مرافق عصرية لتلبية احتياجات العملاء.</p>
+            </div>
+
+            <div class="project">
+                <h2>تطوير البنية التحتية</h2>
+                <p>مشاريع تطوير البنية التحتية لضمان بيئة مستدامة تلبي متطلبات التنمية المستقبلية.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="home-button">العودة إلى الرئيسية</a>
+    </div>
+</body>
+</html>
